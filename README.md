@@ -14,7 +14,7 @@ the streams are added and removed to / from snapcast at runtime. the snapcast co
 * __manage players__
   - add / remove players to / from streams
   - remove players from snapcast (under development)
-* __no group support. groups are handled transparently in the background__
+* __no support for groups. groups are handled transparently in the background__
 
 CAVEAT
 * the server is based on the python 3 HTTPServer and employs the http protocol. do not expose the server to the internet.  
