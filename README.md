@@ -57,15 +57,18 @@ ExecStart=/usr/bin/python3 /usr/share/yascui/yascui.py 4711
 will run the server on port 4711
 
 ### configure the snapcast server
+#### when to configure?
+if snapcast is running on the same machine and the default snapcast port (1780) is used no configuration is necessary  
+in any other cases:
 * edit streams.conf.json in the /build/yascui directory
-* configure server address / port by editing lines 2 and 3
+* configure server address / port by adding two lines before the streams section:
 ```
 {
-  "server": "192.168.178.26",
-  "port": "4711",
-  ...
+  "server": "<snapcast host goes here>",
+  "port": "<snapcast port goes here>",
+  "streams": [
+    {
 ```
-will configure snapcast on __192.168.178.26__ and port __4711__  
 CAVEAT:  
 using the server name will work in most cases on a desktop  
 mobile devices work usually only when an ip address is given  
