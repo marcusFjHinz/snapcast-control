@@ -32,7 +32,7 @@ to start the server locally run
 yascui.py
 ```
 in the /build/yascui directory  
-the server runs on http://localhost:1782
+the server runs on http://localhost:1782  
 to deploy changes run __build.sh__ again
 
 ### install
