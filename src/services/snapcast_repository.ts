@@ -10,6 +10,7 @@ import {yascui_service} from "@/services/yascui_service";
 
 const snapcast_ui_uuid = 'bc4bd73f-0eb3-4f9e-9c20-e71e43dc1f49';
 const default_stream_name = 'default';
+const default_port = 1780;
 
 export class snapcast_repository implements i_websocket_call_back {
 
@@ -33,8 +34,8 @@ export class snapcast_repository implements i_websocket_call_back {
         this.configService = new yascui_service(window.location.href);
         this.configService.get_config()
             .then((c) => {
-                this.host_name = c.server;
-                this.port = c.port;
+                this.host_name = c.server === undefined ? window.location.hostname : c.server;
+                this.port = c.server === undefined ? default_port : c.port;
                 this.stream_configurations = c.streams;
                 const fullUrl = "ws://" + this.host_name + ":" + this.port + "/jsonrpc";
                 this.wsService = new websocket_service(fullUrl, this);
