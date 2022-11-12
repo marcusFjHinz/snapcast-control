@@ -1,0 +1,88 @@
+.stream-label {
+  color: black;
+  padding-top: max(1vh, 10px);
+  padding-left: 1vw;
+  padding-bottom: 2vh;
+  line-height: 16px;
+  font-size: x-large;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.stream-label-dialog{
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background-color: grey;
+
+}
+
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: space-between;
+  width: 98vw;
+  max-width: 800px;
+  min-width: 260px;
+  position: relative;
+}
+.main-container-dialog {
+  padding-top: 0;
+}
+.main-container:last-child{
+  padding-bottom: .5rem;
+}
+
+.stream-card {
+  border-left: 2vmax solid rgba(100, 100, 100, 1);
+  background-color: rgb(150, 150, 150);
+  margin-top: 1rem;
+}
+.stream_card_active {
+  border-left: 2vmax solid #a5d6a7;
+}
+.stream_card_active_other {
+  border-left: 2vmax solid blue;
+}
+.control-button{
+  width: 25%;
+  margin-right: 3px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background-color: rgba(0,0,0, 0.3);
+  margin-bottom: 1rem;
+}
+.control-button-small {
+  width: 5%;
+  background-color: rgb(150, 150, 150);
+  font-size: x-large;
+  color: indianred;
+  font-weight: bold;
+}
+.control-button-single {
+  margin: 1rem;
+}
+
+.control-button-secondary{
+  color: black;
+}
+#actions{
+  position: sticky;
+  top: 1rem;
+  font-size: x-large;
+  width: 70%;
+  z-index: 2000;
+  max-width: 800px;
+  min-width: 240px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox*/
+:host {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
