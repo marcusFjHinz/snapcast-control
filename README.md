@@ -4,6 +4,7 @@ a python, vue/quasar based stream and player centric web interface for [Snapcast
 
 prerequisites:
 * a running snapcast server
+* mpv player available on the snapcast server
 * python3 available on the system
 * in order to play spotify streams: librespot available on the snapcast system
 
