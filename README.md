@@ -14,7 +14,6 @@ the streams are added and removed to / from snapcast at runtime. the snapcast co
 * __manage players__
   - add / remove players to / from streams
   - remove players from snapcast (under development)
-* __no support for groups. groups are handled transparently in the background__
 
 CAVEAT
 * the server is based on the python 3 HTTPServer and employs the http protocol. do not expose the server to the internet.  
@@ -48,6 +47,18 @@ copy __uninstall.sh__ the destination server. run
 sudo uninstall.sh 
 ```
 
+### add / remove streams
+* streams can be added / removed vai the ui
+* edit the streams section in __streams.conf.json__ in the /build/yascui directory
+```
+    {
+      "name": "BBC Radio 1",
+      "url": "http://stream.live.vc.bbcmedia.co.uk/bbc_radio_one",
+      "stream_type": "mpv"
+    },
+```
+will add BBC Radio 1 to with the given url to the list.  
+user __"stream_type": "mpv"__ for webstreams __"stream_type": "soptify"__ when adding a soptify stream.  
 ### configure the server port
 * edit yascui.service in the /build/yascui directory
 * set the desired port as a parameter in the ExecStart- line

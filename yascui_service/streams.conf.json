@@ -1,23 +1,13 @@
 {
   "streams": [
     {
-      "name": "SWR2",
-      "url": "https://liveradio.swr.de/sw282p3/swr2/",
+      "name": "Fun Radio France",
+      "url": "http://streaming.radio.funradio.fr/fun-1-44-128",
       "stream_type": "mpv"
     },
     {
-      "name": "SWR3",
-      "url": "https://liveradio.swr.de/sw282p3/swr3/",
-      "stream_type": "mpv"
-    },
-    {
-      "name": "HR2",
-      "url": "https://dispatcher.rndfnk.com/hr/hr2/live/mp3/high",
-      "stream_type": "mpv"
-    },
-    {
-      "name": "HR1",
-      "url": "https://dispatcher.rndfnk.com/hr/hr1/live/mp3/high",
+      "name": "BBC Radio 1",
+      "url": "http://stream.live.vc.bbcmedia.co.uk/bbc_radio_one",
       "stream_type": "mpv"
     },
     {
@@ -26,23 +16,8 @@
       "stream_type": "mpv"
     },
     {
-      "name": "Dlf Kultur",
-      "url": "https://st02.sslstream.dlf.de/dlf/02/high/aac/stream.aac?aggregator=web",
-      "stream_type": "mpv"
-    },
-    {
-      "name": "Dlf Nova",
-      "url": "https://st03.sslstream.dlf.de/dlf/03/high/aac/stream.aac?aggregator=web",
-      "stream_type": "mpv"
-    },
-    {
-      "name": "Spotify Channel Marcus",
+      "name": "My Spotify",
       "stream_type": "spotify"
-    },
-    {
-      "name": "BR Klassik",
-      "url": "https://streams.br.de/br-klassik_3.m3u",
-      "stream_type": "mpv"
     }
   ]
 }

@@ -2,3 +2,4 @@
 /node_modules/
 /dist/
 /build/
+/yascui_service/private-streams.conf.json
