@@ -48,7 +48,7 @@ sudo uninstall.sh
 ```
 
 ### add / remove streams
-* streams can be added / removed vai the ui
+* streams can be added / removed via the ui
 * edit the streams section in __streams.conf.json__ in the /build/yascui directory
 ```
     {
