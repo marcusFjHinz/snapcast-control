@@ -1,6 +1,6 @@
 # snapcast control 
 
-a python, vue/quasar based stream and player centric web interface for [Snapcast](https://github.com/badaix/snapcast).
+a python, vue/quasar based stream and player centric client for [Snapcast](https://github.com/badaix/snapcast).
 
 prerequisites:
 * a running snapcast server
@@ -14,7 +14,9 @@ features:
 the streams are added and removed to / from snapcast at runtime. the snapcast configuration is not touched by the application.
 * __manage players__
   - add / remove players to / from streams
+  - Volume control of streams and single players
   - remove players from snapcast (under development)
+  - 
 
 CAVEAT
 * the server is based on the python 3 HTTPServer and employs the http protocol. do not expose the server to the internet.  
